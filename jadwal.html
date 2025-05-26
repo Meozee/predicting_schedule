@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kuliah - 16 Opsi Valid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .summary {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .summary-item {
+            display: inline-block;
+            margin: 5px 15px;
+            font-size: 1.1rem;
+        }
+
+        .table-container {
+            padding: 30px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        th {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 18px 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #f0f0f0;
+            vertical-align: middle;
+            font-size: 0.9rem;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f9ff;
+        }
+
+        tr:hover {
+            background: #e3f2fd;
+            transform: scale(1.01);
+            transition: all 0.3s ease;
+        }
+
+        .opsi-number {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #667eea;
+            background: #e8f0fe;
+            padding: 8px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            min-width: 40px;
+        }
+
+        .mata-kuliah {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .jadwal-detail {
+            color: #666;
+            font-size: 0.85rem;
+            background: #f0f8ff;
+            padding: 4px 8px;
+            border-radius: 5px;
+            margin: 2px 0;
+        }
+
+        .hari {
+            font-weight: 600;
+            color: #4facfe;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        .waktu {
+            color: #333;
+            font-weight: 500;
+        }
+
+        .pilihan-badge {
+            background: #e1f5fe;
+            color: #0277bd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .table-container {
+                padding: 15px;
+            }
+
+            th,
+            td {
+                padding: 10px 8px;
+                font-size: 0.8rem;
+            }
+
+            .summary-item {
+                display: block;
+                margin: 8px 0;
+            }
+        }
+
+        .day-schedule {
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        .schedule-item {
+            margin: 3px 0;
+            padding: 3px 6px;
+            background: #fff3e0;
+            border-left: 3px solid #ff9800;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📅 Jadwal Kuliah - 16 Opsi Valid</h1>
+            <div class="summary">
+                <div class="summary-item">✅ Total Opsi: <strong>16</strong></div>
+                <div class="summary-item">🔥 Konflik: <strong>0</strong></div>
+                <div class="summary-item">✨ Semua Jadwal Valid</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Opsi</th>
+                        <th>Professional English</th>
+                        <th>Data Science Project</th>
+                        <th>Data Analytic & Visualization</th>
+                        <th>Big Data Project</th>
+                        <th>Jadwal Mingguan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">1</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">09:30 - 11:45</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <div class="schedule-item">09:30-11:45 Big Data</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">2</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">JUMAT</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <strong>Jumat:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Big Data</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">3</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">09:30 - 11:45</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">09:30-11:45 Big Data</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">4</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">JUMAT</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <strong>Jumat:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Big Data</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">5</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SELASA</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">09:30 - 11:45</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Selasa:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <div class="schedule-item">09:30-11:45 Big Data</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">6</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SELASA</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">JUMAT</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Selasa:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <strong>Jumat:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Big Data</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">7</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SELASA</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">09:30 - 11:45</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Selasa:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">09:30-11:45 Big Data</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">8</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SELASA</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">JUMAT</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Selasa:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <strong>Jumat:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Big Data</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">9</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">09:30 - 11:45</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <div class="schedule-item">09:30-11:45 Big Data</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">10</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">JUMAT</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Jumat:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Big Data</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">11</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">09:30 - 11:45</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">09:30-11:45 Big Data</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- Opsi Number -->
+                        <td>
+                            <div class="opsi-number">12</div>
+                        </td>
+
+                        <!-- Professional English (Pilihan 2) -->
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+
+                        <!-- Data Science Project (Pilihan 2, tapi di HTML kamu pakai Pilihan 1) -->
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SENIN</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+
+                        <!-- Data Analytic and Visualization Project (Pilihan 2) -->
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+
+                        <!-- Big Data Project (Pilihan 2) -->
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">JUMAT</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+
+                        <!-- Rekap Jadwal Mingguan -->
+                        <td class="day-schedule">
+                            <strong>Senin:</strong><br>
+                            <div class="schedule-item">07:00 - 09:15 Data Science Project</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">07:00 - 09:15 Data Analytic and Visualization Project</div>
+                            <div class="schedule-item">14:30 - 16:45 Professional English</div>
+                            <strong>Jumat:</strong><br>
+                            <div class="schedule-item">07:00 - 09:15 Big Data Project</div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="opsi-number">13</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SELASA</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">09:30 - 11:45</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Selasa:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science Project</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic and Visualization Project</div>
+                            <div class="schedule-item">09:30-11:45 Big Data Project</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">14</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SELASA</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">JUMAT</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Selasa:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science Project</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic and Visualization Project</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Jumat:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Big Data Project</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">15</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SELASA</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 1</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">RABU</span><br>
+                                <span class="waktu">09:30 - 11:45</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Selasa:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science Project</div>
+                            <strong>Rabu:</strong><br>
+                            <div class="schedule-item">09:30-11:45 Big Data Project</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic and Visualization Project</div>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="opsi-number">16</div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">14:30 - 16:45</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">SELASA</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">KAMIS</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mata-kuliah">Pilihan 2</div>
+                            <div class="jadwal-detail">
+                                <span class="hari">JUMAT</span><br>
+                                <span class="waktu">07:00 - 09:15</span>
+                            </div>
+                        </td>
+                        <td class="day-schedule">
+                            <strong>Selasa:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Science Project</div>
+                            <strong>Kamis:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Data Analytic and Visualization Project</div>
+                            <div class="schedule-item">14:30-16:45 Professional English</div>
+                            <strong>Jumat:</strong><br>
+                            <div class="schedule-item">07:00-09:15 Big Data Project</div>
+                        </td>
+                    </tr>
+                    <h2>📌 Rangkuman Jadwal Terbaik – Schedule 1</h2>
+
+                    <table border="1" cellpadding="8" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Jadwal</th>
+                                <th>Hari Kuliah</th>
+                                <th>Jumlah Hari</th>
+                                <th>Gap Waktu</th>
+                                <th>Keunggulan</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5</td>
+                                <td>Senin, Selasa, Rabu</td>
+                                <td>3</td>
+                                <td>Tidak Ada</td>
+                                <td>Rabu berurutan, hanya 3 hari kuliah</td>
+                                <td><strong>⭐ Terbaik</strong></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Senin, Selasa, Rabu, Jumat</td>
+                                <td>4</td>
+                                <td>Tidak Ada</td>
+                                <td>Jadwal rapi, tanpa gap waktu</td>
+                                <td>Baik</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Selasa, Rabu, Kamis</td>
+                                <td>3</td>
+                                <td>Tidak Ada</td>
+                                <td>Rabu berurutan, hanya 3 hari kuliah</td>
+                                <td>Bagus</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Selasa, Rabu, Kamis, Jumat</td>
+                                <td>4</td>
+                                <td>Tidak Ada</td>
+                                <td>Jadwal rapi dan padat</td>
+                                <td>Baik</td>
+                            </tr>
+                            <tr>
+                                <td>1, 3, 4, 9, 10, 11, 12, 15, 16</td>
+                                <td>Beragam</td>
+                                <td>4–5</td>
+                                <td><strong>Ada</strong></td>
+                                <td>Gap waktu terlalu jauh (pagi-sore)</td>
+                                <td><span style="color: red;">Tidak Direkomendasikan</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><strong>Catatan:</strong> Jadwal <strong>5</strong> adalah pilihan terbaik untuk Schedule 1
+                        karena hanya butuh 3 hari kuliah dan tidak ada gap waktu yang mengganggu.</p>
+
+                    <!DOCTYPE html>
+                    <html lang="id">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Jadwal Kuliah - 16 Opsi Valid</title>
+                        <style>
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+
+                            body {
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                min-height: 100vh;
+                                padding: 20px;
+                            }
+
+                            .container {
+                                max-width: 1400px;
+                                margin: 0 auto;
+                                background: white;
+                                border-radius: 15px;
+                                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                                overflow: hidden;
+                            }
+
+                            .header {
+                                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                                color: white;
+                                padding: 30px;
+                                text-align: center;
+                            }
+
+                            .header h1 {
+                                font-size: 2.5rem;
+                                margin-bottom: 10px;
+                                font-weight: 600;
+                            }
+
+                            .summary {
+                                background: rgba(255, 255, 255, 0.1);
+                                padding: 15px 25px;
+                                border-radius: 10px;
+                                margin-top: 20px;
+                                backdrop-filter: blur(10px);
+                            }
+
+                            .summary-item {
+                                display: inline-block;
+                                margin: 5px 15px;
+                                font-size: 1.1rem;
+                            }
+
+                            .table-container {
+                                padding: 30px;
+                                overflow-x: auto;
+                            }
+
+                            table {
+                                width: 100%;
+                                border-collapse: collapse;
+                                background: white;
+                                border-radius: 10px;
+                                overflow: hidden;
+                                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+                            }
+
+                            th {
+                                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                                color: white;
+                                font-weight: 600;
+                                font-size: 1rem;
+                                padding: 18px 15px;
+                                text-align: center;
+                                position: sticky;
+                                top: 0;
+                                z-index: 10;
+                            }
+
+                            td {
+                                padding: 15px;
+                                text-align: center;
+                                border-bottom: 1px solid #f0f0f0;
+                                vertical-align: middle;
+                                font-size: 0.9rem;
+                            }
+
+                            tr:nth-child(even) {
+                                background: #f8f9ff;
+                            }
+
+                            tr:hover {
+                                background: #e3f2fd;
+                                transform: scale(1.01);
+                                transition: all 0.3s ease;
+                            }
+
+                            .opsi-number {
+                                font-weight: bold;
+                                font-size: 1.1rem;
+                                color: #667eea;
+                                background: #e8f0fe;
+                                padding: 8px 12px;
+                                border-radius: 20px;
+                                display: inline-block;
+                                min-width: 40px;
+                            }
+
+                            .mata-kuliah {
+                                font-weight: 600;
+                                color: #333;
+                                margin-bottom: 3px;
+                            }
+
+                            .jadwal-detail {
+                                color: #666;
+                                font-size: 0.85rem;
+                                background: #f0f8ff;
+                                padding: 4px 8px;
+                                border-radius: 5px;
+                                margin: 2px 0;
+                            }
+
+                            .hari {
+                                font-weight: 600;
+                                color: #4facfe;
+                                text-transform: uppercase;
+                                font-size: 0.8rem;
+                                letter-spacing: 0.5px;
+                            }
+
+                            .waktu {
+                                color: #333;
+                                font-weight: 500;
+                            }
+
+                            .pilihan-badge {
+                                background: #e1f5fe;
+                                color: #0277bd;
+                                padding: 2px 6px;
+                                border-radius: 3px;
+                                font-size: 0.75rem;
+                                font-weight: 500;
+                            }
+
+                            @media (max-width: 768px) {
+                                .header h1 {
+                                    font-size: 1.8rem;
+                                }
+
+                                .table-container {
+                                    padding: 15px;
+                                }
+
+                                th,
+                                td {
+                                    padding: 10px 8px;
+                                    font-size: 0.8rem;
+                                }
+
+                                .summary-item {
+                                    display: block;
+                                    margin: 8px 0;
+                                }
+                            }
+
+                            .day-schedule {
+                                text-align: left;
+                                line-height: 1.6;
+                            }
+
+                            .schedule-item {
+                                margin: 3px 0;
+                                padding: 3px 6px;
+                                background: #fff3e0;
+                                border-left: 3px solid #ff9800;
+                                border-radius: 3px;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <div class="container">
+                            <div class="header">
+                                <h1>📅 Jadwal Kuliah - 16 Opsi Valid</h1>
+                                <div class="summary">
+                                    <div class="summary-item">✅ Total Opsi: <strong>16</strong></div>
+                                    <div class="summary-item">🔥 Konflik: <strong>0</strong></div>
+                                    <div class="summary-item">✨ Semua Jadwal Valid</div>
+                                </div>
+                            </div>
+
+                            <div class="table-container">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Opsi</th>
+                                            <th>Professional English</th>
+                                            <th>Data Science Project</th>
+                                            <th>Data Analytic & Visualization</th>
+                                            <th>Big Data Project</th>
+                                            <th>Jadwal Mingguan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">1</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">09:30 - 11:45</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <div class="schedule-item">09:30-11:45 Big Data</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">2</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Big Data</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">3</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">KAMIS</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">09:30 - 11:45</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">09:30-11:45 Big Data</div>
+                                                <strong>Kamis:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">4</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">KAMIS</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                                <strong>Kamis:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Big Data</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">5</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SELASA</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">09:30 - 11:45</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                                <strong>Selasa:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <div class="schedule-item">09:30-11:45 Big Data</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">6</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SELASA</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                                <strong>Selasa:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Big Data</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">7</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SELASA</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">KAMIS</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">09:30 - 11:45</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                                <strong>Selasa:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">09:30-11:45 Big Data</div>
+                                                <strong>Kamis:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">8</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SELASA</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">KAMIS</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                                <strong>Selasa:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Kamis:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Big Data</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">9</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">09:30 - 11:45</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <div class="schedule-item">09:30-11:45 Big Data</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">10</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Big Data</div>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">11</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">KAMIS</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">09:30 - 11:45</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">09:30-11:45 Big Data</div>
+                                                <strong>Kamis:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">12</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SENIN</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">KAMIS</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Senin:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Kamis:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Big Data</div>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">13</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SELASA</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">09:30 - 11:45</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Selasa:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <div class="schedule-item">09:30-11:45 Big Data</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">14</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SELASA</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Selasa:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Big Data</div>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">15</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SELASA</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">KAMIS</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 1</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">RABU</span><br>
+                                                    <span class="waktu">09:30 - 11:45</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Selasa:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Rabu:</strong><br>
+                                                <div class="schedule-item">09:30-11:45 Big Data</div>
+                                                <strong>Kamis:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="opsi-number">16</div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">14:30 - 17:00</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">SELASA</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">KAMIS</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="mata-kuliah">Pilihan 2</div>
+                                                <div class="jadwal-detail">
+                                                    <span class="hari">JUMAT</span><br>
+                                                    <span class="waktu">07:00 - 09:15</span>
+                                                </div>
+                                            </td>
+                                            <td class="day-schedule">
+                                                <strong>Selasa:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Science</div>
+                                                <strong>Kamis:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Data Analytic</div>
+                                                <strong>Jumat:</strong><br>
+                                                <div class="schedule-item">07:00-09:15 Big Data</div>
+                                                <div class="schedule-item">14:30-17:00 Professional English</div>
+                                            </td>
+                                        </tr>
+                                        <h2>📌 Rangkuman Jadwal Terbaik – Schedule 2</h2>
+
+                                        <table border="1" cellpadding="8" cellspacing="0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Jadwal</th>
+                                                    <th>Hari Kuliah</th>
+                                                    <th>Jumlah Hari</th>
+                                                    <th>Gap Waktu</th>
+                                                    <th>Keunggulan</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>Senin, Selasa, Rabu</td>
+                                                    <td>3</td>
+                                                    <td>Tidak Ada</td>
+                                                    <td>Rabu berurutan, hanya 3 hari kuliah</td>
+                                                    <td><strong>⭐ Terbaik</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9</td>
+                                                    <td>Senin, Rabu, Jumat</td>
+                                                    <td>3</td>
+                                                    <td>Tidak Ada</td>
+                                                    <td>Rabu berurutan, tidak ada gap waktu</td>
+                                                    <td>Bagus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>13</td>
+                                                    <td>Selasa, Rabu, Jumat</td>
+                                                    <td>3</td>
+                                                    <td>Tidak Ada</td>
+                                                    <td>Rabu berurutan, hanya 3 hari kuliah</td>
+                                                    <td>Bagus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6</td>
+                                                    <td>Senin, Selasa, Rabu, Jumat</td>
+                                                    <td>4</td>
+                                                    <td>Tidak Ada</td>
+                                                    <td>Jadwal cukup padat dan rapi</td>
+                                                    <td>Baik</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1, 2, 3, 4</td>
+                                                    <td>Beragam</td>
+                                                    <td>4–5</td>
+                                                    <td><strong>Ada</strong></td>
+                                                    <td>Gap waktu Senin terlalu jauh (pagi dan sore)</td>
+                                                    <td><span style="color: red;">Tidak Direkomendasikan</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>10, 12, 14, 16</td>
+                                                    <td>Beragam</td>
+                                                    <td>4–5</td>
+                                                    <td><strong>Ada</strong></td>
+                                                    <td>Gap waktu Jumat terlalu jauh (pagi dan sore)</td>
+                                                    <td><span style="color: red;">Tidak Direkomendasikan</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <p><strong>Catatan:</strong> Jadwal <strong>5</strong> tetap menjadi pilihan
+                                            terbaik untuk Schedule
+                                            2. Namun, jadwal <strong>9 dan 13</strong> juga sangat layak dipertimbangkan
+                                            karena memiliki 3
+                                            hari kuliah dan tidak ada gap waktu.</p>
